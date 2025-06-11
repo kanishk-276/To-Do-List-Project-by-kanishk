@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
 
 html {
   font-family: Poppins;
 }
 
 body {
-  background: linear-gradient(0deg, #8afff9, rgb(0, 102, 255));
+  background: linear-gradient(0deg, #a5fffa, rgb(3, 62, 150));
   display: flex;
+  width: 100vw;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -15,7 +18,15 @@ body {
 .h11 {
   color: white;
   text-align: center;
+  font-size: 30px;
 }
+
+.h12 {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
 
 .form {
   display: flex;
@@ -23,21 +34,24 @@ body {
   align-items: center;
   width: 40vw;
   height: 80vh;
-  background-color: rgb(255, 255, 255);
+ background-color: rgba(255, 255, 255, 0.536);
   padding-top: 10px;
   padding-bottom: 20px;
-  padding-left: 5px;
+  padding-left: 60px;
   padding-bottom: 5px;
   border-radius: 20px;
+  backdrop-filter: blur(var(--blur-lg));
 }
 
+
+
 .inputbox {
-  height: 50px;
-  width: 60%;
+  height: 60px;
+  width: 69%;
   outline: none;
   border-radius: 10px;
-  padding-left: 5px;
-  font-size: 23px;
+  padding-left: 15px;
+  font-size: 20px;
   background-color: rgba(255, 255, 255, 0.108);
   border: none;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -51,9 +65,10 @@ body {
   height: 50px;
   width: 50px;
   font-size: 30px;
-  background: linear-gradient(0deg, #8afff9, rgb(0, 102, 255));
+  background: linear-gradient(0deg, #00aaff, rgb(0, 102, 255));
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 
@@ -63,6 +78,8 @@ body {
      width: 90%;
   height: 70px;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 
 
 }
@@ -74,17 +91,23 @@ body {
   height: auto;
   width: 100%;
   margin-top: 20px;
+  padding-right: 50px;
   margin-bottom: 40px;
 }
 .delete{
   margin-left: 10px;
   outline: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   height: 60px;
   width: 60px;
   font-size: 30px;
-  background: linear-gradient(0deg, #01f9f1, #0066ff);
+  background: linear-gradient(0deg, #00aaff, rgb(0, 102, 255));
   border: none;
+  cursor: pointer;
   color: white;
 }
 
@@ -95,14 +118,15 @@ body {
 .task {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  background-color: white;
-  width: 80%;
+  background-color: rgba(255, 255, 255, 0.464);
+  width: 90%;
   height: 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-left: 20px;
   border-radius: 10px;
+  font-size: 20px;
 }
 
 .checkk {

@@ -4,6 +4,7 @@ import "./App.css";
 import Input from "./components/Input.jsx";
 import Todo from "./components/Todo.jsx";
 
+
 function App() {
   const [inputVal, setInputVal] = useState("");
   const [todos, setTodos] = useState([]);
@@ -30,10 +31,12 @@ function App() {
   return (
     <>
       <h1 className="h11">To-Do List</h1>
-      <form className="form">
+      <h2 className="h12">React + Vite</h2>
+      <div className="form">
+        
         <Input inputVal={inputVal} writetodo={writetodo} addtodo={addTodo} />
         <Todo todos={todos} delTodo = {delTodo}/>
-      </form>
+      </div>
     </>
   );
 }
